@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:gravity="center"
+    android:background="@color/primary_200"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/btDelete"
+        android:layout_toStartOf="@+id/btDelete"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="17sp"
+        android:text="Todo"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvDesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvTitle"
+        android:layout_toLeftOf="@+id/btDelete"
+        android:layout_toStartOf="@+id/btDelete"
+        android:maxLines="3"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:text="Details about Todo"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvTimestamp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDesc"
+        android:layout_toLeftOf="@+id/btDelete"
+        android:layout_toStartOf="@+id/btDelete"
+        android:text="DateTime"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        tools:ignore="HardcodedText" />
+
+    <androidx.appcompat.widget.AppCompatImageButton
+        android:id="@+id/btDelete"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:background="@null"
+        android:tint="@color/black"
+        android:src="@android:drawable/ic_delete" />
+</RelativeLayout>
