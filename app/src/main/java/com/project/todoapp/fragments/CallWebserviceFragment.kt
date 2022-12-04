@@ -65,7 +65,7 @@ class CallWebserviceFragment : Fragment(){
             .baseUrl("https://newsapi.org/v2/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
-            .create<NewsApi>().getTopHeadlines(pageSize = 1)
+            .create<NewsApi>().getTopHeadlines(pageSize = 10)
 
         call.enqueue(object: Callback<NewsDataFromJson> {
 
